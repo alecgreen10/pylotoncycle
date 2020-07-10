@@ -120,7 +120,7 @@ class PylotonCycle:
         resp = self.GetUrl(url)
         return resp
 
-    def GetWorkoutMetricsById(self, workout_id, frequency=50):
+    def GetWorkoutMetricsById(self, workout_id, frequency=3):
         url = '%s/api/workout/%s/performance_graph?every_n=%s' % (
             self.base_url, workout_id, frequency)
         resp = self.GetUrl(url)
